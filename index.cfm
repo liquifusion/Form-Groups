@@ -4,8 +4,9 @@
 
 <cfinclude template="css.cfm">
 
-<h1>Form Groups v0.2</h1>
+<h1>Form Groups v0.3</h1>
 <p>This plugin provides you with 3 additional form helpers: <tt>checkBoxTagGroup()</tt>, <tt>radioButtonGroup()</tt>, and <tt>radioButtonTagGroup()</tt>. With these new helpers, you can generate groups of check boxes and radio buttons by passing a query, array, or struct as an argument called <tt>options</tt>. This behavior is similar to Wheels <tt><a href="http://cfwheels.org/docs/function/select">select()</a></tt> and <tt><a href="http://cfwheels.org/docs/function/selecttag">selectTag()</a></tt> helpers.</p>
+<p><strong>Note:</strong> I strongly recommend only using this plugin on version 1.0.x of Wheels. As of version 1.1, I recommend instead configuring your model files to use <a href="http://cfwheels.org/docs/1-1/chapter/nested-properties">Nested Properties</a> and then use the new <a href="http://cfwheels.org/docs/1-1/function/hasmanycheckbox"><tt>hasManyCheckBox()</tt></a> and <a href="http://cfwheels.org/docs/1-1/function/hasmanyradiobutton"><tt>hasManyRadioButton()</tt></a> form helpers in your view.</p>
 
 <h2>Optional Fieldset and Legend</h2>
 <p>All 3 group helpers have an argument called <tt>isFieldset</tt> that defaults to <tt>true</tt>. When set to <tt>true</tt>, you should provide the matching <tt>legend</tt> argument as well. Then the helpers will wrap your form group with an <abbr title="Hypertext Markup Language">HTML</abbr> <tt>fieldset</tt> and <tt>legend</tt>.</p>

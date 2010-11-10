@@ -6,7 +6,7 @@
 	<cffunction name="init" hint="Constructor. Initializes plugin and sets global defaults for new helpers.">
 		
 		<!--- Wheels version number --->
-		<cfset this.version = "1.0">
+		<cfset this.version = "1.0,1.0.1,1.0.2,1.0.3,1.0.4,1.0.5">
 		
 		<!--- Settings for default values --->
 		<cfset $setDefaultValue(functionName="checkBoxTagGroup", valueField="id", textField="name", labelPlacement="around", prependToLabel="", appendToLabel="", prepend="", append="", errorElement="span")>
